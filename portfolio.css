@@ -1,0 +1,112 @@
+/* Reset & Font */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: #f0f0f0;
+  line-height: 1.6;
+  background: url('./Images/swastik\ \(1\).JPG') no-repeat center center fixed;
+  background-size: cover;
+  backdrop-filter: blur(0.2px);
+}
+
+/* Apply semi-transparent backgrounds to sections */
+header, .hero, .about, .gallery, .footer {
+  background: rgba(0, 0, 0, 0.6); /* Semi-transparent dark layer */
+  backdrop-filter: blur(4px);
+  margin: 1rem auto;
+  border-radius: 12px;
+  padding: 1.5rem;
+  max-width: 1200px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.4);
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header h1 {
+  font-size: 1.8rem;
+}
+.highlight {
+  color: #00fff7;
+}
+nav a {
+  color: #ccc;
+  text-decoration: none;
+  margin-left: 2rem;
+  transition: color 0.3s ease;
+}
+nav a:hover {
+  color: #00fff7;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 5rem 2rem;
+}
+.hero h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+.hero p {
+  font-size: 1.2rem;
+  color: #ccc;
+}
+
+/* About */
+.about {
+  text-align: center;
+}
+.about h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #00fff7;
+}
+.about p {
+  max-width: 700px;
+  margin: auto;
+  font-size: 1.1rem;
+}
+
+/* Gallery */
+.gallery h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #00fff7;
+  margin-bottom: 2rem;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+.grid img {
+  width: 100%;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.grid img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 25px rgba(0, 255, 247, 0.3);
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  color: #ccc;
+}
+.footer h3 {
+  color: #00fff7;
+  margin-bottom: 0.5rem;
+}
+.footer a {
+  color: #00fff7;
+  text-decoration: none;
+}
